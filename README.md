@@ -46,8 +46,8 @@ age >= 18 AND income >= 30000
 2. **Modify a Rule:**
 - Provide the rule index, modification type (operator/operand), and the new value.
 - Example:
-   -Change operator from AND to OR.
-   -Update operand from age >= 18 to age >= 21.
+   - Change operator from AND to OR.
+   - Update operand from age >= 18 to age >= 21.
 3. **Combine Rules:**
 - Combine multiple rules logically with the AND/OR operator.
 - The combined rule is stored in the backend.
