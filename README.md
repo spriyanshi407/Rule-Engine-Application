@@ -1,24 +1,24 @@
-#Flask Rule Engine#
-##Overview##
+# Flask Rule Engine #
+## Overview
 This **Flask Rule Engine** is a lightweight web application that evaluates user eligibility based on predefined rules. It uses **Abstract Syntax Trees (ASTs**) to represent and manipulate logical rules. This project allows users to:
 - Create, modify, and combine rules.
 - Evaluate data against these rules.
 - Potentially extend the engine with user-defined functions for advanced conditions.
   
-##Features##
+## Features
 - **Create rules**: Define rules like (age >= 18 AND income >= 30000).
 - **Modify rules**: Change operators or operands in existing rules.
 - **Combine rules**: Merge multiple rules logically using AND/OR.
 - **Evaluate data**: Check if the input data matches the rules.
 
-##Requirements##
+## Requirements
 Make sure your system has the following installed:
 1. **Python 3.x**: Download from python.org.
 2. **pip**: Comes bundled with Python, but can be installed via: _python -m ensurepip_
 3. **Git**: Install from git-scm.com.
 4. **Virtualenv** (Optional but recommended): To manage project dependencies.
    
-##Setup
+## Setup
 1. Clone the Repository:
 git clone https://github.com/spriyanshi407/flask-rule-engine.git
 cd flask-rule-engine
@@ -31,13 +31,13 @@ venv\Scripts\activate      # On Windows
 3. Install Dependencies:
 pip install -r requirements.txt
 
-##How to Run the Application##
+## How to Run the Application
 1. **Start the Flask App:**
 python app.py
 2. **Access the Application:** Open your browser and visit:
 http://localhost:5000
 
-##Usage##
+## Usage
 1. **Add a New Rule:**
 - Navigate to the UI at http://localhost:5000.
 - Enter rules like:
@@ -61,7 +61,7 @@ age >= 18 AND income >= 30000
 }
 - Get a result indicating whether the data satisfies the rules.
   
-##How It Works##
+## How It Works
 1. **Abstract Syntax Tree (AST):**
 Each rule is represented as a tree with nodes for **operands** (like age >= 18) and **operators** (like AND).
 
@@ -77,5 +77,5 @@ Multiple rules are merged into a single AST with logical operators like AND/OR.
 5. **Evaluating Rules:**
 The rules are evaluated against input data using Python's eval function, but variable values are substituted with the actual data before execution.
 
-##Contributing##
+## Contributing
 Feel free to fork the repository and submit pull requests. Contributions are always welcome!
