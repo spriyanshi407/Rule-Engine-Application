@@ -1,0 +1,144 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f5dc, #e3c7a5); /* Light beige gradient */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3e2723; /* Dark brown text */
+    overflow: hidden;
+}
+
+/* Container Layout */
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 95vh;
+    width: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Sidebar with Vertical Links */
+.sidebar {
+    background: #3e2723; /* Dark brown */
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Space between elements */
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-weight: 700;
+    color: #f5f5dc; /* Light beige */
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.sidebar nav {
+    width: 100%; /* Make nav take full width */
+}
+
+.sidebar nav a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    text-align: left;
+    font-weight: 500;
+    color: #f5f5dc; /* Light beige */
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar nav a:hover {
+    background: #e3c7a5; /* Light brown on hover */
+    color: #3e2723; /* Dark brown */
+    transform: scale(1.05);
+}
+
+/* Content Area */
+.content {
+    padding: 40px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Header */
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Card Styling */
+.card {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Neomorphic Buttons */
+.neomorphic-btn {
+    background: #e3c7a5; /* Light brown */
+    border-radius: 30px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+    border: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    color: #3e2723; /* Dark brown */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.neomorphic-btn:hover {
+    box-shadow: inset 4px 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Text Inputs */
+textarea, input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255, 255, 255, 0.3); /* Slightly transparent */
+    color: #3e2723; /* Dark brown */
+    outline: none;
+}
+
+/* Rules List */
+.rules-container {
+    max-height: 200px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "rules": [
+        {
+            "id": 1,
+            "rule": "((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)"
+        },
+        {
+            "id": 2,
+            "rule": "((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)"
+        },
+        {
+            "id": 3,
+            "rule": "(age < 40 AND salary < 60000) OR (experience > 2 AND department = 'HR')"
+        }
+    ]
+}
