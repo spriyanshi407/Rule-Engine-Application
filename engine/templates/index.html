@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Rule Engine</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="static/app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>⚙️ Rule Engine</h2>
+            <nav>
+                <a href="#create-rules">Create Rules</a>
+                <a href="#combine-rules">Combine Rules</a>
+                <a href="#evaluate-data">Evaluate Data</a>
+                <a href="#rules-list">Rules List</a>
+                <a href="#modify-rules">Modify Rules</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <header>
+                <h1>Manage Your Rules</h1>
+            </header>
+
+            <section id="create-rules" class="card fade-in">
+                <h2>Create Rules</h2>
+                <textarea id="rule-input" rows="8" cols="50" placeholder='Enter rules (one per line, e.g., "age > 30\nage <= 40")'></textarea>
+                <button class="neomorphic-btn" onclick="createRules()">Create Rules</button>
+                <p id="create-message" class="message"></p>
+            </section>
+
+            <section id="combine-rules" class="card fade-in">
+                <h2>Combine Rules</h2>
+                <button class="neomorphic-btn" onclick="combineRules()">Combine Rules</button>
+                <p id="combined-rule" class="message"></p>
+            </section>
+
+            <section id="evaluate-data" class="card fade-in">
+                <h2>Evaluate Data</h2>
+                <textarea id="data-input" rows="4" placeholder='Enter JSON data (e.g., {"age": 35, "department": "Sales", "salary": 30000})'></textarea>
+                <button class="neomorphic-btn" onclick="evaluateRule()">Evaluate</button>
+                <p id="evaluate-result" class="message"></p>
+            </section>
+
+            <section id="rules-list" class="card fade-in">
+                <h2>Rules List</h2>
+                <button class="neomorphic-btn" id="showRules">Show Rules</button>
+                <div class="rules-container" id="rules-list-content"></div>
+            </section>
+
+            <section id="modify-rules" class="card fade-in">
+                <h2>Modify Rules</h2>
+                <div class="form-group">
+                    <label for="modify-index">Rule Index:</label>
+                    <input type="number" id="modify-index" min="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="modify-type">Modification Type:</label>
+                    <select id="modify-type">
+                        <option value="operator">Change Operator</option>
+                        <option value="operand">Change Operand</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="modify-value">New Value:</label>
+                    <input type="text" id="modify-value">
+                </div>
+
+                <button class="neomorphic-btn" onclick="modifyRule()">Modify Rule</button>
+                <p id="modify-message" class="message"></p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
