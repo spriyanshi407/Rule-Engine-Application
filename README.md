@@ -25,12 +25,12 @@ Make sure your system has the following installed:
 
 ## Setup
 1. **Clone the Repository:**
-   git clone https://github.com/spriyanshi407/flask-rule-engine.git
-   cd flask-rule-engine
+   - git clone https://github.com/spriyanshi407/flask-rule-engine.git
+   - cd flask-rule-engine
 2. **Create Virtual Environment**
-    python -m venv venv
-    source venv/bin/activate   # On macOS/Linux
-    venv\Scripts\activate      # On Windows
+    - python -m venv venv
+    - source venv/bin/activate   # On macOS/Linux
+    - venv\Scripts\activate      # On Windows
 3. pip install Flask Flask-CORS
 4. set FLASK_APP=app.py
 5. set FLASK_ENV=development
