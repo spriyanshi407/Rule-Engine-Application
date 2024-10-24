@@ -85,5 +85,5 @@ Store rules in a database for better persistence and scalability.
 **Authentication:**
 Add user authentication for secure rule management.
 
-**Contributing**
+## Contributing
 Feel free to fork the repository and submit pull requests. Contributions are always welcome!
