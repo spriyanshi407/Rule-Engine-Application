@@ -26,7 +26,7 @@ Make sure your system has the following installed:
 ## Setup
 1. **Clone the Repository:**
    - git clone https://github.com/spriyanshi407/flask-rule-engine.git
-   - cd flask-rule-engine
+   - cd engine
 2. **Create Virtual Environment**
     - python -m venv venv
     - source venv/bin/activate   # On macOS/Linux
